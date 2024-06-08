@@ -51,7 +51,8 @@ class MyApp extends StatelessWidget {
                               padding: const EdgeInsets.all(16.0),
                               child: Text(
                                 'Page 2',
-                                style: Theme.of(context).textTheme.headlineLarge,
+                                style:
+                                    Theme.of(context).textTheme.headlineLarge,
                               ),
                             ),
                             const Placeholder(fallbackHeight: 1000),

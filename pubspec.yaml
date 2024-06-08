@@ -11,7 +11,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   wolt_modal_sheet:
-    git: git@github.com:woltapp/wolt_modal_sheet.git
+    # git: git@github.com:woltapp/wolt_modal_sheet.git
+    path: ../wolt_modal_sheet
 
 dev_dependencies:
   flutter_test:

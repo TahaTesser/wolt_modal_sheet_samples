@@ -248,11 +248,9 @@ packages:
   wolt_modal_sheet:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "13daf14f8ef95d62fff67242a00f0de943c1aac9"
-      url: "git@github.com:woltapp/wolt_modal_sheet.git"
-    source: git
+      path: "../wolt_modal_sheet"
+      relative: true
+    source: path
     version: "0.6.1"
 sdks:
   dart: ">=3.1.0 <4.0.0"
