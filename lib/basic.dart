@@ -19,19 +19,22 @@ class MyApp extends StatelessWidget {
                 WoltModalSheet.show<void>(
                   context: context,
                   pageListBuilder: (modalSheetContext) {
-                    final Widget stickyActionBar = Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        FilledButton(
-                          onPressed: Navigator.of(modalSheetContext).pop,
-                          child: const Text('Close'),
-                        ),
-                        FilledButton(
-                          onPressed:
-                              WoltModalSheet.of(modalSheetContext).showNext,
-                          child: const Text('Next'),
-                        ),
-                      ],
+                    final Widget stickyActionBar = Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          FilledButton(
+                            onPressed: Navigator.of(modalSheetContext).pop,
+                            child: const Text('Close'),
+                          ),
+                          FilledButton(
+                            onPressed:
+                                WoltModalSheet.of(modalSheetContext).showNext,
+                            child: const Text('Next'),
+                          ),
+                        ],
+                      ),
                     );
                     final List<WoltModalSheetPage> pages = <WoltModalSheetPage>[
                       WoltModalSheetPage(
