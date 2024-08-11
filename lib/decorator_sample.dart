@@ -21,12 +21,12 @@ class MyApp extends StatelessWidget {
                   modalTypeBuilder: (modalSheetContext) {
                     return WoltModalType.bottomSheet();
                   },
-                  decorator: (Widget child) {
+                  modalDecorator: (Widget child) {
                     return ColoredBox(
-                     color: Theme.of(context)
-                            .colorScheme
-                            .primary
-                            .withOpacity(0.38),
+                      color: Theme.of(context)
+                          .colorScheme
+                          .primary
+                          .withOpacity(0.38),
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: child,
